@@ -16,7 +16,7 @@
 import asyncio
 import sys
 
-from odmantic import AIOEngine
+
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 
