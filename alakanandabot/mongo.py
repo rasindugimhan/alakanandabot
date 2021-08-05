@@ -1,8 +1,7 @@
-#Kiitu
-import asyncio
+#alakananda
+
 import sys
 
-from motor import motor_asyncio
 from alakanandabot import MONGO_DB_URI 
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
@@ -16,7 +15,7 @@ MONGO_DB = "EVIL"
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI, MONGO_PORT)[MONGO_DB]
-motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URI, MONGO_PORT)
+
 db = motor[MONGO_DB]
 db = client["alakanandabot"]
 try:
