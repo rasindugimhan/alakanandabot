@@ -27,7 +27,6 @@ MONGO_PORT = get_int_key("MONGO_PORT")
 MONGO_DB = get_str_key("MONGO_DB")
 
 # Init MongoDB
-mongodb = mongoclient(MONGO_URI, MONGO_PORT)[MONGO_DB]
 motor = motor_asyncio.AsyncIOMotorClient(MONGO_URI, MONGO_PORT)
 db = motor[MONGO_DB]
 
