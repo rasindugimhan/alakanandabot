@@ -20,7 +20,6 @@ import sys
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 
-from alakanandabot import log
 from alakanandabot.config import get_int_key, get_str_key
 
 MONGO_URI = get_str_key("MONGO_URI")
