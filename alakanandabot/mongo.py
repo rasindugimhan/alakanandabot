@@ -6,7 +6,7 @@ from odmantic import AIOEngine
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 
-from alakanandabot.utils.logger import log
+from alakanandabot import LOGGER as log
 from alakanandabot.conf import get_int_key, get_str_key
 
 MONGO_URI = get_str_key("MONGO_DB_URI")
